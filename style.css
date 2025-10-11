@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Asimovian&family=Bebas+Neue&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Fredoka:wght@300..700&family=Hachi+Maru+Pop&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.todo-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.todo-app {
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  padding: 40px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header h2 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.icon i {
+  font-size: 20px;
+  transition: all ease 0.3s;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 0 20px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.3s;
+  background: white;
+  margin-bottom: 20px;
+}
+
+input::placeholder {
+  color: #a0aec0;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+button {
+  flex: 1;
+  height: 50px;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#add {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+#clear {
+  background: white;
+  color: #e53e3e;
+  border: 2px solid #e53e3e;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+ul::-webkit-scrollbar {
+  width: 6px;
+}
+
+ul::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 10px;
+}
+
+ul::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: white;
+  border-radius: 12px;
+  font-size: 15px;
+  color: #2d3748;
+  gap: 15px;
+  border: 2px solid #e2e8f0;
+  transition: all 0.3s;
+  word-break: break-word;
+}
+
+li span {
+  flex: 1;
+  line-height: 1.5;
+}
+
+li i {
+  cursor: pointer;
+  color: #e53e3e;
+  font-size: 20px;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+li i:hover {
+  transform: scale(1.2);
+  color: #c53030;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #a0aec0;
+  font-size: 15px;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .todo-app {
+    padding: 30px 24px;
+  }
+
+  .header h2 {
+    font-size: 24px;
+  }
+
+  input,
+  button {
+    height: 46px;
+  }
+
+  li {
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+}
