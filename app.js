@@ -6,7 +6,7 @@ let body = document.querySelector("body");
 let task = document.querySelector("#task-list");
 
 function toggle() {
-  let dark = true
+  let dark = true;
   themeIcon.addEventListener("click", function () {
     if (dark) {
       body.style.backgroundColor = "#121b2b";
@@ -23,8 +23,6 @@ function toggle() {
 }
 
 toggle();
-
-
 
 addBtn.addEventListener("click", function () {
   if (input.value === "") {
@@ -52,4 +50,3 @@ addBtn.addEventListener("click", function () {
 clearAllBtn.addEventListener("click", function () {
   task.innerHTML = "";
 });
-
