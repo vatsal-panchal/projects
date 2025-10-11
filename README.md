@@ -3,7 +3,7 @@
 A clean, modern, and responsive Todo App built with **HTML**, **CSS**, and **JavaScript**. This app allows users to add, delete, and clear tasks while also supporting a dark/light theme toggle.  
 
 ## 🔗 Live Demo
-https://vatsal-panchal.github.io/projects/
+https://vatsal-panchal.github.io/Todo-app/
 
 ## Features
 
