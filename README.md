@@ -18,4 +18,4 @@ https://vatsal-panchal.github.io/projects/
 
 1. Clone the repository:  
 ```bash
-git clone https://github.com/vatsal-panchal/projects.git
+git clone https://github.com/vatsal-panchal/Todo-app.git
